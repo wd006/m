@@ -50,8 +50,14 @@ function resetBalances() {
 
 
 // Son basamağı silme
+// Son basamağı silme
 function removeLastDigit() {
-    inputAmount = Math.floor(inputAmount / 10); // Son basamağı siler
+    // Eğer inputAmount 0'dan büyükse, son basamağı sil
+    if (inputAmount > 0) {
+        inputAmount = Math.floor(inputAmount / 10);
+    } else {
+        inputAmount = 0;
+    }
     updateUI();
 }
 // Sayfa yüklendiğinde UI’yi güncelle
