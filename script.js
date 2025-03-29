@@ -40,9 +40,17 @@ function updateBalance(type) {
     updateUI();
 }
 
-function baslangic {
-    
-balances[playerIndex] += "2000000";
+// Seçilen oyuncuya 2 milyon ekleme fonksiyonu
+function baslangic() {
+    let playerIndex = document.getElementById("playerSelect").value - 1; // Seçili oyuncu
+
+    // Seçilen oyuncuya 2 milyon ekle
+    balances[playerIndex] += 2000000;
+
+    // Yeni bakiyeleri kaydet
+    localStorage.setItem("balances", JSON.stringify(balances));
+
+    // UI'yı güncelle
     updateUI();
 }
 // Bütün bakiyeleri sıfırla
