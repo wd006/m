@@ -40,6 +40,10 @@ function updateBalance(type) {
     updateUI();
 }
 
+function baslangic {
+    
+balances[playerIndex] += "2000000";
+}
 // Bütün bakiyeleri sıfırla
 //function resetBalances() {
  //   balances = [15000000, 15000000, 15000000, 15000000]; // Hepsini sıfırla
