@@ -48,5 +48,11 @@ function resetBalances() {
     updateUI();
 }
 
+
+// Son basamağı silme
+function removeLastDigit() {
+    inputAmount = Math.floor(inputAmount / 10); // Son basamağı siler
+    updateUI();
+}
 // Sayfa yüklendiğinde UI’yi güncelle
 updateUI();
