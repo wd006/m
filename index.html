@@ -57,21 +57,31 @@
         <button onclick="addNumber(9)">9</button>
     </div>
 
-    <div class="button-container">
-        <button onclick="setMultiplier(1000)">K (×1000)</button>
-        <button onclick="setMultiplier(1000000)">M (×1.000.000)</button>
-    </div>
 
-    <div>
-        <input id="amountInput" class="input" type="text" value="0" disabled>
-    </div>
+
+   
 
     <div class="button-container">
         <button onclick="updateBalance('+')">+</button>
+        <button onclick="addNumber(0)">0</button>
         <button onclick="updateBalance('-')">-</button>
-        <button onclick="resetBalances()" style="background-color: red; color: white;">RESET</button>
+       
     </div>
 
+       <div class="button-container">
+        <button onclick="setMultiplier(1000)">K (×1000)</button>
+        <button onclick="setMultiplier(1000000)">M (×1.000.000)</button>
+    </div>
+    
+     <div>
+        <input id="amountInput" class="input" type="text" value="0" disabled>
+    </div>
+
+    <div class="buton-container"> 
+     <center>  <button onclick="resetBalances()" style="background-color: red; color: white;">RESET</button>
+  </center>  
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
