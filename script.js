@@ -41,11 +41,25 @@ function updateBalance(type) {
 }
 
 // Bütün bakiyeleri sıfırla
+//function resetBalances() {
+ //   balances = [15000000, 15000000, 15000000, 15000000]; // Hepsini sıfırla
+/////    localStorage.setItem("balances", JSON.stringify(balances)); // Yeni bakiyeleri kaydet
+ //   inputAmount = 0; // Girişi sıfırla
+//    updateUI();
+//}
+
 function resetBalances() {
-    balances = [15000000, 15000000, 15000000, 15000000]; // Hepsini sıfırla
-    localStorage.setItem("balances", JSON.stringify(balances)); // Yeni bakiyeleri kaydet
-    inputAmount = 0; // Girişi sıfırla
-    updateUI();
+    // Kullanıcıdan onay al
+    if (confirm("Tüm bakiyeleri sıfırlamak istediğinizden emin misiniz?")) {
+        // Eğer kullanıcı onay verirse
+        balances = [15000000, 15000000, 15000000, 15000000]; // Bakiyeleri sıfırla
+        localStorage.setItem("balances", JSON.stringify(balances)); // Yeni bakiyeleri kaydet
+        inputAmount = "0"; // Girişi sıfırla
+        updateUI(); // UI'yı güncelle
+    } else {
+        // Kullanıcı onaylamazsa, işlem yapılmaz
+        console.log("Sıfırlama işlemi iptal edildi.");
+    }
 }
 
 
