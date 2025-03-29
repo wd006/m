@@ -43,6 +43,7 @@ function updateBalance(type) {
 function baslangic {
     
 balances[playerIndex] += "2000000";
+    updateUI();
 }
 // Bütün bakiyeleri sıfırla
 //function resetBalances() {
