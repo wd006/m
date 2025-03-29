@@ -10,6 +10,17 @@
         .buttons button { margin: 5px; padding: 10px; font-size: 18px; width: 60px; }
         .input { font-size: 20px; width: 80px; text-align: center; }
         .button-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+
+        /* Sayı input kutusunun genişliğini arttırıyoruz */
+#amountInput {
+    width: 100%; /* Genişliği %100 yaparak tüm alanı kapsamasını sağlıyoruz */
+    font-size: 24px; /* Yazı boyutunu büyütüyoruz */
+    padding: 10px; /* İçerideki yazıya biraz boşluk bırakıyoruz */
+    text-align: right; /* Yazıyı sağa hizalıyoruz */
+    box-sizing: border-box; /* Padding'ler dahil olacak şekilde kutuyu ayarlıyoruz */
+    max-width: 500px; /* Maksimum genişlik sınırlaması, dilerseniz istediğiniz gibi ayarlayabilirsiniz */
+    margin: 0 auto; /* Ortalayarak daha estetik görünmesini sağlıyoruz */
+}
     </style>
 </head>
 <body>
